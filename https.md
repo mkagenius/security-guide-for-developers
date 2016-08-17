@@ -6,7 +6,7 @@ The problem with HTTP without any S is that it sends and receives data in plain 
 
 #### Well, who can see my data in plain text?
 
-Well, anyone in your local network, your co-workers for example or people sitting around in your favourite cåfe. 
+Well, anyone in your local network, your co-workers for example or people sitting around you in your favourite cafe. 
 
 #### How will they do it?
 
@@ -95,9 +95,10 @@ https://www.paypal-engineering.com/2015/10/14/key-pinning-in-mobile-applications
 
 ## Precautions for general public
 * When you visit a website in your browser, make sure it displays the padlock like this ![padlock](/img/padlock.png) (will be gray in safari)
-* If you see striked out padlock and a warning page, then do not proceed, someone might be snooping on your traffic.
+* If you are using an untrusted or public internet(wifi/wired) and you see striked out padlock and a warning page, then do not proceed, someone might be snooping on your traffic.
 * iOS and Android apps have no way to tell if they are encrypting the traffic. Bad luck.
-* If you use a mobile phone or laptop provided by the company then they may install certain certificates to be trusted by the device and can easily snoop on all your browsing. You should check if any ca cert is installed in your phone. Steps to check: todo
+* Do not hand over your unloked mobile phones to any untrusted person. He/she might install certain untrusted `CAs` (certificate authorities) and can see all your traffic.
+* If you use a mobile phone or laptop provided by the company then they might have installed certain `CAs` (certificates authorities) to be trusted by the device and can easily snoop on all your browsing. You should check if any `CA` is installed in your phone. Steps to check: todo
 
 
 ## Future of HTTPS
