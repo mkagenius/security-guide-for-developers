@@ -41,7 +41,10 @@ So, `https` servers two main purpose
 ### How to get HTTPS for my website?
 #### There are two ways to get HTTPS to your website
 1. Paid 
-	* TODO
+	* You need to buy a SSL certificate from some CAs 
+	* Then you need to generate a certificate signing request from your server
+	* Then they ask you to verify that you really own the domain.
+	* Then they let you download the signed certificate which you can use in your server's configuration.
 2. Free: 
 	* Use [LetsEncrypt](https://letsencrypt.org/). Letsencrypt is free because the whole process is totally automated hence getting rid of the manual cost of configuration, creation, validation, expiration etc. 
 	* To setup, follow the steps mentioned here depending on your server: [Setup steps](https://certbot.eff.org/#ubuntuxenial-nginx)
