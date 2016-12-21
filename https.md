@@ -2,7 +2,7 @@
 
 
 ## The problem
-The problem with HTTP without any S is that it sends and receives data in plain text. 
+HTTP is the protocol that the browsers use to communicate with the server. The problem with HTTP without any S is that it sends and receives data in plain text. 
 
 #### Well, who can see my data in plain text?
 
@@ -106,7 +106,7 @@ https://www.paypal-engineering.com/2015/10/14/key-pinning-in-mobile-applications
 * If you are using an untrusted or public internet(wifi/wired) and you see striked out padlock and a warning page, then do not proceed, someone might be snooping on your traffic.
 * iOS and Android apps have no way to tell if they are encrypting the traffic. Bad luck.
 * Do not hand over your unloked mobile phones to any untrusted person. He/she might install certain untrusted `CAs` (certificate authorities) and can see all your traffic.
-* If you use a mobile phone or laptop provided by the company then they might have installed certain `CAs` (certificates authorities) to be trusted by the device and can easily snoop on all your browsing. You should check if any `CA` is installed in your phone. Steps to check: todo
+* If you use a mobile phone or laptop provided by the company then they might have installed certain `CAs` (certificates authorities) to be trusted by the device and can easily snoop on all your browsing. You should check if any `CA` is installed in your phone. Steps to check: In iOS, go to `Settings` -> `General` -> `Profiles`. If there is anything installed there then someone might be sniffing your traffic. In Android, go to `Settings`, under "Personal," tap `Security`, under "Credential storage," tap `Trusted credentials`. Check the certificates installed by user and system.
 
 
 ## Future of HTTPS
